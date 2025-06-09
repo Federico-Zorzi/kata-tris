@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="tris-table">
+        <div class="grid-row">
+          <div id="1" onclick="addItem(0 , 0)" class="grid-item"></div>
+          <div id="2" onclick="addItem(0 , 1)" class="grid-item bl br"></div>
+          <div id="3" onclick="addItem(0 , 2)" class="grid-item"></div>
+        </div>
+
+        <div class="grid-row">
+          <div id="4" onclick="addItem(1 , 0)" class="grid-item bb bt"></div>
+          <div
+            id="5"
+            onclick="addItem(1 , 1)"
+            class="grid-item bb bl bt br"
+          ></div>
+          <div id="6" onclick="addItem(1 , 2)" class="grid-item bb bt"></div>
+        </div>
+
+        <div class="grid-row">
+          <div id="7" onclick="addItem(2 , 0)" class="grid-item"></div>
+          <div id="8" onclick="addItem(2 , 1)" class="grid-item bl br"></div>
+          <div id="9" onclick="addItem(2 , 2)" class="grid-item"></div>
+        </div>
+
+        <div id="banner"></div>
+      </div>
+
+      <div id="tris-info">
+        <h1>Tris</h1>
+        <p>Allinea tre simboli uguali in orizzontale, verticale o diagonale!</p>
+      </div>
+    </div>
+    <script src="tris.js"></script>
+  </body>
+</html>

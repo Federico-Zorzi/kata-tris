@@ -1,0 +1,72 @@
+/* RESET RULES*/
+body {
+  margin: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.bb {
+  border-bottom: 4px solid blue;
+}
+
+.bt {
+  border-top: 4px solid blue;
+}
+
+.bl {
+  border-left: 4px solid blue;
+}
+
+.br {
+  border-right: 4px solid blue;
+}
+
+/* TRIS TABLE */
+#tris-table {
+  position: relative;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.grid-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  padding: 2rem;
+
+  font-size: 80px;
+  line-height: 100px;
+  text-align: center;
+}
+
+#tris-info {
+  width: 30%;
+}
+
+#banner {
+  position: absolute;
+  width: 100%;
+}
+
+#winner-banner {
+  box-sizing: border-box;
+  padding: 1rem;
+  text-align: center;
+  font-size: 20px;
+  background-color: blueviolet;
+  color: white;
+}
