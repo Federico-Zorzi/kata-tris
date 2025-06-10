@@ -1,28 +1,65 @@
+/* FONTS */
+@font-face {
+  font-family: "Freckle Face";
+  src: url("./fonts/Freckle_Face/FreckleFace-Regular.ttf") format("truetype");
+}
+
+:root {
+  --var-bg-color: #a773d8;
+  --var-second-bg-color: #6c4d8b;
+  --var-border-color: white;
+  --var-text-color: white;
+}
+
 /* RESET RULES*/
 body {
   margin: 1rem;
+  background-color: var(--var-bg-color);
+  font-family: "Freckle Face";
 }
 
-.container {
+.tris-table-container {
   display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: center;
 }
 
 .bb {
-  border-bottom: 4px solid blue;
+  border-bottom: 4px solid var(--var-border-color);
 }
 
 .bt {
-  border-top: 4px solid blue;
+  border-top: 4px solid var(--var-border-color);
 }
 
 .bl {
-  border-left: 4px solid blue;
+  border-left: 4px solid var(--var-border-color);
 }
 
 .br {
-  border-right: 4px solid blue;
+  border-right: 4px solid var(--var-border-color);
+}
+
+/* SCORE BOARD */
+#score-board-container {
+  background-color: var(--var-second-bg-color);
+  color: var(--var-text-color);
+  text-align: center;
+
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+#score-board-container h2 {
+  font-size: 3rem;
+  margin: 0 0 1rem 0;
+}
+
+#score-board {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+
+  font-size: 3rem;
 }
 
 /* TRIS TABLE */
@@ -51,6 +88,7 @@ body {
   font-size: 80px;
   line-height: 100px;
   text-align: center;
+  color: var(--var-text-color);
 }
 
 #tris-info {
@@ -60,13 +98,39 @@ body {
 #banner {
   position: absolute;
   width: 100%;
+  height: 100%;
 }
 
 #winner-banner {
+  width: 100%;
+
   box-sizing: border-box;
   padding: 1rem;
   text-align: center;
-  font-size: 20px;
-  background-color: blueviolet;
-  color: white;
+  font-size: 40px;
+  background-color: var(--var-second-bg-color);
+  border: 1px solid #392e39;
+  color: var(--var-text-color);
+}
+
+.d-none-banner {
+  display: none;
+}
+
+.d-show-banner {
+  display: flex;
+  align-items: center;
+}
+
+.bg-green {
+  background-color: #6ea56e;
+}
+
+/* INFO COLUMN */
+#tris-info {
+  color: var(--var-text-color);
+}
+
+#tris-info h1 {
+  font-size: 3rem;
 }

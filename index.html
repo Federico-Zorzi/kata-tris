@@ -7,7 +7,21 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="container">
+    <div id="score-board-container">
+      <h2>Score Board</h2>
+      <div id="score-board">
+        <div>
+          X <br />
+          <span id="X-score">0</span>
+        </div>
+        <div>
+          O <br />
+          <span id="O-score">0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tris-table-container">
       <div id="tris-table">
         <div class="grid-row">
           <div id="1" onclick="addItem(0 , 0)" class="grid-item"></div>
@@ -31,12 +45,7 @@
           <div id="9" onclick="addItem(2 , 2)" class="grid-item"></div>
         </div>
 
-        <div id="banner"></div>
-      </div>
-
-      <div id="tris-info">
-        <h1>Tris</h1>
-        <p>Allinea tre simboli uguali in orizzontale, verticale o diagonale!</p>
+        <div id="banner" class="d-none-banner"></div>
       </div>
     </div>
     <script src="tris.js"></script>
