@@ -49,8 +49,10 @@ function addItem(r, c) {
 
     // reset values
     if (isActualPlayerWinning || (!isActualPlayerWinning && stepCount == 9)) {
+      if (isActualPlayerWinning) {
+        score[actualPlayer] = score[actualPlayer] + 1;
+      }
       showBanner(isActualPlayerWinning);
-      score[actualPlayer] = score[actualPlayer] + 1;
 
       xScore.innerText = score["X"];
       oScore.innerText = score["O"];
